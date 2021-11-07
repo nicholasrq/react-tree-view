@@ -1,0 +1,22 @@
+.tree {
+  --size: 24px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.tree-placeholder {
+  height: var(--size);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.tree-placeholder:after {
+  display: block;
+  content: "";
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: var(--indent);
+  border: 1px dashed rgba(0, 153, 255, 0.3);
+  background-color: rgba(0, 153, 255, 0.1);
+}
